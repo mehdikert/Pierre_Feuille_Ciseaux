@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1;100;200;300;400;500;600&display=swap');
+    </style>
+    <title>Pierre , papier Ciseaux</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Pierre Papier Ciseaux</h1>
+        <div class="choices">
+            <div class="choice" id="pierre" onclick="game(0)"><img src="image/rock-svgrepo-com.svg" alt=""></div>
+            <div class="choice" id="papier" onclick="game(1)"><img src="image/paper-svgrepo-com.svg" alt=""></div>
+            <div class="choice" id="ciseaux" onclick="game(2)"><img src="image/scissors-svgrepo-com.svg" alt=""></div>
+        </div>
+        <div class="gameScore">
+            <h1>IA : <span id="scoreIA">0</span></h1>
+            <h1>User : <span id="scoreUser">0</span></h1>
+        </div>
+        <div class="arene">
+            <div class="areneDiv" id="choixIA"></div>
+            <div class="areneDiv" id="Resultat"></div>
+            <div class="areneDiv" id="choixUser"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
